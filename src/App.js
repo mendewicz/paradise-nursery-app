@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import ProductPage from './ProductPage';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import ProductPage from './ProductPage'; // Make sure this file is in the same directory
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
             </Link>
           </div>
         } />
-        <Route path="/products" element={<ProductPage />} />
+        <Route path="/products" element={<ProductPage />} />  {/* This is your product page */}
       </Routes>
     </Router>
   );
